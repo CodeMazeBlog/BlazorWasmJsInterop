@@ -26,3 +26,18 @@ export function splitEmailDetails(message) {
 		'domain': secondPart.split('.')[1]
 	}
 }
+
+export function focusAndStyleElement(element) {
+	element.style.color = 'red';
+	element.focus();
+}
+
+export function focusAndStyleInputComponent(id) {
+	const element = document.getElementById(id);
+	element.style.color = 'red';
+	element.focus();
+}
+
+export function throwError() {
+	throw Error("Testing error message from JS file.");
+}

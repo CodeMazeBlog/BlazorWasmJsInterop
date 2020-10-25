@@ -12,10 +12,18 @@ namespace BlazorWasmJSInteropExamples.Pages
 		private IJSObjectReference _jsModule;
 		private string _registrationResult;
 		private string _detailsMessage;
+		private ElementReference _elRef;
+		private EmailDetails _emailDetails = new EmailDetails();
+		private string _errorMessage;
 
-		protected override async Task OnInitializedAsync()
+		protected override async Task OnAfterRenderAsync(bool firstRender)
 		{
-			_jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./scripts/jsExamples.js");
+			if (firstRender)
+			{
+				_jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./scripts/jsExamples.js");
+				await FocusAndStyleElement();
+				await ThrowError();
+			}
 		}
 
 		private async Task ShowAlertWindow() => 
@@ -32,6 +40,25 @@ namespace BlazorWasmJSInteropExamples.Pages
 				_detailsMessage = $"Name: {emailDetails.Name}, Server: {emailDetails.Server}, Domain: {emailDetails.Domain}";
 			else
 				_detailsMessage = "Email is not provided.";
+		}
+
+		private async Task FocusAndStyleElement()
+			=> await _jsModule.InvokeVoidAsync("focusAndStyleElement", _elRef);
+
+		private async Task FocusAndStyleInputComonent()
+			=> await _jsModule.InvokeVoidAsync("focusAndStyleInputComponent", "dummyInputComponent");
+
+		private async Task ThrowError()
+		{
+			try
+			{
+				await _jsModule.InvokeVoidAsync("throwError");
+			}
+			catch (JSException ex)
+			{
+				_errorMessage = ex.Message;
+				StateHasChanged();
+			}
 		}
 	}
 }

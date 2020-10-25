@@ -1,3 +1,3 @@
-# How to call JavaScript functions from C#
-## https://code-maze.com/how-to-call-javascript-code-from-net-blazor-webassembly
-This repo contains the souce code for the "How to Call JavaScript Functions with C# in Blazor WebAssembly" article on Code Maze
+# Using JSInterop to Pass HTML Elements and Handle JS Errors
+## https://code-maze.com/using-jsinterop-to-pass-html-elements-and-handle-js-errors
+This repo contains the souce code for the "Using JSInterop to Pass HTML Elements and Handle JS Errors" article on Code Maze
