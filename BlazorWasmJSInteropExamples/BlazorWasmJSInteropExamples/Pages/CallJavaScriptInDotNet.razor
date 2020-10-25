@@ -1,0 +1,49 @@
+﻿@page "/jsindotnet"
+
+<h2>Call JavaScript In DotNet</h2>
+<br />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>
+			Example for calling a JS function returning void:
+		</h4>
+	</div>
+	<div class="col-md-6">
+		<button type="button" class="btn btn-info" @onclick="ShowAlertWindow">Show Alert Window</button>
+	</div>
+</div>
+
+<br />
+<hr />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>
+			Example for calling a JS function returning result:
+		</h4>
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-info" @onclick="RegisterEmail">Register Email</button>
+	</div>
+	<div class="col-md-4">
+		@_registrationResult
+	</div>
+</div>
+
+<br />
+<hr />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>
+			Calling a JS function that returns an object:
+		</h4>
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-info" @onclick="ExtractEmailInfo">Email Details</button>
+	</div>
+	<div class="col-md-4">
+		@_detailsMessage
+	</div>
+</div>
