@@ -1,0 +1,58 @@
+﻿@page "/dotnetinjs"
+
+<h2>Call DotNet From JavaScript</h2>
+<br />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>Calling static method from JS</h4>
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-success" onclick="jsFunctions.calculateSquareRoot()">
+			Calculate
+		</button>
+	</div>
+	<div class="col-md-4">
+		<span id="string-result" class="form-text"></span>
+	</div>
+</div>
+
+<br />
+<hr />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>Calling static method from JS with Custom Identifier</h4>
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-success" onclick="jsFunctions.calculateSquareRootWithJustResult()">
+			Calculate
+		</button>
+	</div>
+	<div class="col-md-4">
+		<span id="result" class="form-text"></span>
+	</div>
+</div>
+
+<br />
+<hr />
+
+<div class="row">
+	<div class="col-md-4">
+		<h4>Calling instance method from JS </h4>
+	</div>
+	<div class="col-md-2">
+		<button type="button" class="btn btn-success" @onclick="SendDotNetInstanceToJS">
+			Send Instance
+		</button>
+	</div>
+	<div class="col-md-4">
+		<p id="coordinates" style="height: 200px; width: 400px;	background-color: #d6d8d6;
+			text-align:center; font-size:20px;">
+			@_coordinates.X - @_coordinates.Y
+		</p>
+	</div>
+</div>
+
+<br />
+<hr />

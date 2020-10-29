@@ -1,3 +1,3 @@
-# Using JSInterop to Pass HTML Elements and Handle JS Errors
-## https://code-maze.com/using-jsinterop-to-pass-html-elements-and-handle-js-errors
-This repo contains the souce code for the "Using JSInterop to Pass HTML Elements and Handle JS Errors" article on Code Maze
+# How to Call C# Methods from JavaScript in Blazor WebAssembly
+## https://code-maze.com/how-to-call-csharp-methods-from-javascript-in-blazor-webassembly
+This repo contains the souce code for the "How to Call C# Methods from JavaScript in Blazor WebAssembly" article on Code Maze

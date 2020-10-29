@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30516.212
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmJSInteropExamples", "BlazorWasmJSInteropExamples\BlazorWasmJSInteropExamples.csproj", "{CBCE5E82-8FC6-48DA-B794-461ED00C880F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmJSInteropExamples", "BlazorWasmJSInteropExamples\BlazorWasmJSInteropExamples.csproj", "{CBCE5E82-8FC6-48DA-B794-461ED00C880F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
