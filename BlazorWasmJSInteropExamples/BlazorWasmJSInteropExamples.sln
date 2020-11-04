@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30516.212
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmJSInteropExamples", "BlazorWasmJSInteropExamples\BlazorWasmJSInteropExamples.csproj", "{CBCE5E82-8FC6-48DA-B794-461ED00C880F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSInteropExamples.OnlineStatusIndicator", "JSInteropExamples.OnlineStatusIndicator\JSInteropExamples.OnlineStatusIndicator.csproj", "{3CEB64D6-C1D6-4A76-9C87-27F78AAC48C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSInteropExamples.OnlineStatusIndicator", "JSInteropExamples.OnlineStatusIndicator\JSInteropExamples.OnlineStatusIndicator.csproj", "{3CEB64D6-C1D6-4A76-9C87-27F78AAC48C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasm.Toastr", "BlazorWasm.Toastr\BlazorWasm.Toastr.csproj", "{2CEA1EE7-56D5-48C1-8037-EC3314478B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3CEB64D6-C1D6-4A76-9C87-27F78AAC48C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CEB64D6-C1D6-4A76-9C87-27F78AAC48C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CEB64D6-C1D6-4A76-9C87-27F78AAC48C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CEA1EE7-56D5-48C1-8037-EC3314478B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CEA1EE7-56D5-48C1-8037-EC3314478B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CEA1EE7-56D5-48C1-8037-EC3314478B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CEA1EE7-56D5-48C1-8037-EC3314478B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

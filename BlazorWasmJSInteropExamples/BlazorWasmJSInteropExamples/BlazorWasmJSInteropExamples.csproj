@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorWasm.Toastr\BlazorWasm.Toastr.csproj" />
     <ProjectReference Include="..\JSInteropExamples.OnlineStatusIndicator\JSInteropExamples.OnlineStatusIndicator.csproj" />
   </ItemGroup>
 
